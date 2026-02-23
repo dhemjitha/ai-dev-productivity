@@ -1,7 +1,7 @@
 export default function TasksPage() {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold tracking-tight">Tasks</h1>
+      <h1 className="text-2xl font-bold tracking-tight">Tasks Management</h1>
     </div>
   )
 }

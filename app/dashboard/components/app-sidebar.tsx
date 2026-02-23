@@ -5,9 +5,10 @@ import { usePathname } from "next/navigation"
 import {
   LayoutDashboard,
   ListTodo,
-  Bot,
   GitPullRequest,
-  Users,
+  GitCommit,
+  FlaskConical,
+  FileText,
   Settings,
   Zap,
   ChevronUp,
@@ -33,10 +34,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const navItems = [
   { title: "Overview", href: "/dashboard", icon: LayoutDashboard },
-  { title: "Tasks", href: "/dashboard/tasks", icon: ListTodo },
-  { title: "AI Insights", href: "/dashboard/insights", icon: Bot },
-  { title: "Code Review", href: "/dashboard/reviews", icon: GitPullRequest },
-  { title: "Team", href: "/dashboard/team", icon: Users },
+  { title: "Code Review Assistant", href: "/dashboard/code-review", icon: GitPullRequest },
+  { title: "PR Summary Generator", href: "/dashboard/pr-summary", icon: FileText },
+  { title: "Commit Message Generator", href: "/dashboard/commit-message", icon: GitCommit },
+  { title: "Test Case Generator", href: "/dashboard/test-generator", icon: FlaskConical },
+  { title: "Tasks Management", href: "/dashboard/tasks", icon: ListTodo },
 ]
 
 const settingsItems = [
